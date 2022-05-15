@@ -1,0 +1,52 @@
+.filter_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 16px 5px;
+    margin-top: 16px;
+}
+
+.filter_btnBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 5px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 20px;
+    overflow: auto;
+}
+
+.filter_btnBox::-webkit-scrollbar {
+    height: 3px;
+}
+
+.filter_btnBox::-webkit-scrollbar-thumb {
+    background-color: #8fc700b6;
+    border-radius: 3px;
+}
+
+.filter_icon {
+    width: 80px;
+    color: #8fc700;
+    padding: 0;
+}
+
+.filter_btn {
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    border-radius: 25px;
+    background-color: #8fc700;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .3s ease;
+    padding: 0 20px;
+}
+
+.filter_btn:hover {
+    background-color: #7fb002;
+}

@@ -1,0 +1,245 @@
+.basket_container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+
+}
+
+.basket_itemBox {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.basket_item {
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 20px;
+    border-right: 5px solid #8fc700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 5px;
+    position: relative;
+}
+
+.basket_remove {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.basket_remove:hover {
+    transform: scale(1.1);
+}
+
+.basket_link {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+.basket_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basket_img img {
+    width: 80px;
+}
+
+.basket_content {
+    padding: 10px 5px;
+    height: 100%;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, .7);
+}
+
+.basket_title {
+    font-size: 16px;
+}
+
+.basket_counter {
+    flex: 1 1 auto;
+    padding: 10px 5px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.basket_priceBox {
+    width: 100%;
+    max-height: 650px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    position: relative;
+}
+
+.basket_price,
+.basket_offer,
+.basket_send {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 18px;
+    color: rgba(0, 0, 0, .7);
+}
+
+.basket_offer,
+.basket_send {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.basket_offer span:last-child {
+    font-size: 25px;
+    color: tomato;
+}
+
+.basket_send span:last-child {
+    font-size: 25px;
+    color: #8fc700;
+}
+
+.basket_button_buy,
+.basket_button_remove {
+    width: 100%;
+    height: 40px;
+    line-height: 35px;
+    display: block;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.basket_button_buy {
+    background-color: #8fc700;
+    margin-top: 35px;
+}
+
+.basket_button_remove {
+    background-color: tomato;
+    margin-top: 15px;
+}
+
+.basket_button_buy:hover,
+.basket_button_remove:hover {
+    opacity: .8;
+}
+
+.offer_container {
+    width: 70%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.offer_container span {
+    color: rgba(0, 0, 0, .7);
+    font-size: 15px;
+}
+
+.offer_box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #8fc700;
+    border-radius: 5px;
+}
+
+.offer_box input {
+    height: 40px;
+    width: 70%;
+    padding-right: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.offer_box input::placeholder {
+    color: rgba(0, 0, 0, .4);
+}
+
+.offer_box button {
+    width: 30%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: #8fc700;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.offer_box button:hover {
+    font-size: 16px;
+}
+
+.offerBadge {
+    width: 45px;
+    height: 45px;
+    background-color: tomato;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.send_products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.send_info_price {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgba(0, 0, 0, .7);
+    font-size: 18px;
+}

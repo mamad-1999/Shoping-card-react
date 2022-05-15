@@ -1,0 +1,105 @@
+.header {
+    width: 100%;
+    background-color: #8fc700;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.nav {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+.icon_Sopping_box {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.shoppe_icon_box,
+.mark_icon_box {
+    position: relative;
+
+}
+
+.shop_icon {
+    color: #eee;
+    font-size: 40px;
+}
+
+.mark_icon {
+    color: #eee;
+    font-size: 30px;
+}
+
+.badge_shope,
+.badge_mark {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -3px;
+    bottom: 0;
+    border-radius: 20%;
+    background-color: tomato;
+    font-size: 15px;
+    color: #eee;
+}
+
+.badge_mark {
+    right: -5px;
+    bottom: -5px;
+}
+
+.logo {
+    color: #eee;
+    font-size: 20px;
+}
+
+@keyframes tada {
+    from {
+        transform: scale3d(1, 1, 1);
+        opacity: 0;
+    }
+
+    10%,
+    20% {
+        transform: scale3d(0.8, 0.66, 0.66) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale3d(1.2, 1.2, 1.2) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+
+.tada {
+    animation-name: tada;
+    animation-duration: 300ms;
+    animation-fill-mode: both;
+}
