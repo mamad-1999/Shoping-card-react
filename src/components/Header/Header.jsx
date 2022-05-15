@@ -25,7 +25,9 @@ function Header() {
         <header className='header'>
             <nav className='nav'>
                 <Link to={'/'} className='logo'>فروشگاه مواد غذایی</Link>
-                <SearchBar />
+                <div className="search_header">
+                    <SearchBar />
+                </div>
                 <div className='icon_Sopping_box'>
                     <Link to={'/basket'}
                         className='shoppe_icon_box'>

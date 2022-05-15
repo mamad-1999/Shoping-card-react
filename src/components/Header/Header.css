@@ -68,6 +68,13 @@
     font-size: 20px;
 }
 
+.search_header{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @keyframes tada {
     from {
         transform: scale3d(1, 1, 1);
@@ -102,4 +109,11 @@
     animation-name: tada;
     animation-duration: 300ms;
     animation-fill-mode: both;
+}
+
+
+@media screen and (max-width: 660px) {
+    .search_header{
+        display: none;
+    }
 }

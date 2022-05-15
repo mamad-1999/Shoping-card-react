@@ -1,5 +1,5 @@
 .searchBar_box {
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: orange;
+    background-color: #ffaa00;
     color: #fff;
     cursor: pointer;
     transition: all .3s ease;

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import './SearchBar.css'
 import { FiSearch } from 'react-icons/fi'
 import { FilterContext } from '../components/Context/ContextFilter'

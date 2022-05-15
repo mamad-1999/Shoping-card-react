@@ -3,6 +3,7 @@ import './Products.css'
 import Filter from './Filter/Filter'
 import { FilterContext } from '../Context/ContextFilter'
 import Card from './Card/Card'
+import SearchBar from '../../SearchBar/SearchBar'
 
 export default function Products() {
     const { state } = useContext(FilterContext)
@@ -15,6 +16,11 @@ export default function Products() {
     return (
         <>
             <Filter />
+            <div className="search_Container">
+                <div className="search_box">
+                    <SearchBar />
+                </div>
+            </div>
             <div className='product_container'>
                 {productsList.length > 0 ? (
                     productsList.map(product => (
