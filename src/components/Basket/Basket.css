@@ -243,3 +243,17 @@
     color: rgba(0, 0, 0, .7);
     font-size: 18px;
 }
+
+.free_send_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.free_send_title img{
+    width: 25px;
+}
+.free_send_title span{
+    font-size: 15px;
+}

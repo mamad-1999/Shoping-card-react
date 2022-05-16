@@ -13,7 +13,8 @@ export default function SearchBar() {
         <div className='searchBar_box'>
             <input
                 onChange={(e) => searchKeywordHandler(e)}
-                type="text" />
+                type="text"
+                placeholder='جستجو کنید ...' />
             <span>
                 <FiSearch />
             </span>

@@ -20,6 +20,13 @@ export default function Basket() {
                         صفحه محصولات
                     </Link>
                 </div>
+                {state.basket.length > 0 &&
+                    <div className="favorite_linkBar">
+                        <div className='free_send_title'>
+                            <img src="images/sound(1).jpg" alt="" />
+                            <span>هزینه ارسال برای خرید های بالای 100,000 تومان رایگان می باشد.</span>
+                        </div>
+                    </div>}
             </div>
             {state.basket.length > 0 ? (
                 <div className="basket_container">
@@ -47,10 +54,14 @@ export default function Basket() {
                             <span>مجموع مبلغ قابل پرداخت</span>
                             <span>{state.totalPriceFainal.toLocaleString()} تومان</span>
                         </div>
-                        <button className='basket_button_buy'>ادامه فرایند خرید</button>
+                        <button
+                            className='basket_button_buy'>
+                            ادامه فرایند خرید
+                        </button>
                         <button
                             onClick={() => dispath({ type: "EMPTY_BASKET" })} className='basket_button_remove'
-                        >حذف {state.basket.length} کالا از سبد خرید</button>
+                        >حذف {state.basket.length} کالا از سبد خرید
+                        </button>
                     </div>
                 </div>
             ) : (

@@ -32,12 +32,6 @@
     justify-content: center;
     background-color: #ffaa00;
     color: #fff;
-    cursor: pointer;
-    transition: all .3s ease;
     border-radius: 5px 0 0 5px;
     font-size: 20px;
-}
-
-.searchBar_box span:hover {
-    font-size: 16px;
 }
