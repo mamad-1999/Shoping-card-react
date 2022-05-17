@@ -19,8 +19,8 @@ function App() {
   return (
     <ContextProvider>
       <ContextFilter>
-      <Header />
-        {router}
+        <Header />
+          {router}
       </ContextFilter>
     </ContextProvider>
   );

@@ -4,6 +4,7 @@ import Filter from './Filter/Filter'
 import { FilterContext } from '../Context/ContextFilter'
 import Card from './Card/Card'
 import SearchBar from '../../SearchBar/SearchBar'
+import Footer from '../Footer/Footer'
 
 export default function Products() {
     const { state } = useContext(FilterContext)
@@ -42,6 +43,7 @@ export default function Products() {
                     </div>
                 )}
             </div>
+            <Footer />
         </>
     )
 }

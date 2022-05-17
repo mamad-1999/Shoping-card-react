@@ -1,6 +1,7 @@
 .product_container {
     width: 100%;
     max-width: 1200px;
+    min-height: 450px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -21,6 +22,7 @@
     transition: all .3s ease;
     position: relative;
     overflow: hidden;
+    max-height: 350px;
 }
 
 .box:hover {
@@ -29,7 +31,7 @@
 }
 
 .product_img {
-    width: 90%;
+    width: 100%;
 }
 
 .content {
