@@ -3,6 +3,10 @@
 
 ---
 
+![Screenshot from 2022-07-01 17-13-40](https://user-images.githubusercontent.com/91375726/176896996-84b9b144-4cd7-4f9c-809b-c993e82a2eba.png)
+
+---
+
 ### Package in Project:
 
 - react-router-dom
@@ -39,8 +43,7 @@ Clone the project
 
 ```bash
 
-https://github.com/mohammadyousefvand/Shoping-card-react
-.git
+https://github.com/mohammadyousefvand/Shoping-card-react.git
 
 ```
 
@@ -68,6 +71,8 @@ Start the server
 npm start
 
 ```
-
 ---
+
+![Screenshot from 2022-07-01 17-14-33](https://user-images.githubusercontent.com/91375726/176897112-e3229987-82e4-4693-abb2-74af2506cb80.png)
+
  
