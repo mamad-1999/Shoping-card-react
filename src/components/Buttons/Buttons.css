@@ -1,42 +1,42 @@
 .basket_buttons {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
 .basket_plus,
 .basket_minus {
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .basket_plus {
-    background-color: #8fc700;
+  background-color: #8fc700;
 }
 
 .counter_number {
-    width: 35px;
-    height: 50px;
-    display: flex;
-    border: 2px solid #8fc700;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+  width: 35px;
+  height: 50px;
+  display: flex;
+  border: 2px solid #8fc700;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
 .basket_minus {
-    background-color: tomato;
-    color: #fff;
+  background-color: tomato;
+  color: #fff;
 }
 
 .basket_plus:hover,
 .basket_minus:hover {
-    opacity: .8;
+  opacity: 0.8;
 }

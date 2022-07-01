@@ -10,17 +10,17 @@ import Products from './components/Products/Products';
 
 function App() {
   let router = useRoutes([
-    {path: '/', element: <Products />},
-    {path: '/:id', element: <Details />},
-    {path: '/favorite', element: <FavoritePage />},
-    {path: '/basket', element: <Basket />},
-    {path: '*', element: <Navigate to={'/'} />},
+    { path: '/', element: <Products /> },
+    { path: '/:id', element: <Details /> },
+    { path: '/favorite', element: <FavoritePage /> },
+    { path: '/basket', element: <Basket /> },
+    { path: '*', element: <Navigate to={'/'} /> },
   ])
   return (
     <ContextProvider>
       <ContextFilter>
         <Header />
-          {router}
+        {router}
       </ContextFilter>
     </ContextProvider>
   );
