@@ -1,4 +1,5 @@
 # Shopping card react
+# 🍒 🍆 🍊 🍅 🍉 🍌 🍐
 
 ---
 
@@ -27,7 +28,8 @@
 - calculation Price After confirmation offer code
 - Finally, the game "Memory Game" link and Source in the footer
 
-### API
+### Demo
+# 🍐 🍇 🍋 🍄 🌽 🍑 🍎
 
 ## [See Website](https://product-shopping-react.netlify.app/)
 
