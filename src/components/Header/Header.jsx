@@ -3,11 +3,14 @@ import "./Header.css";
 import { AiOutlineShopping } from "react-icons/ai";
 import { BsFillBookmarkHeartFill } from "react-icons/bs";
 import { ProductContext } from "../Context/ContextProvider";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import SearchBar from "../SearchBar/SearchBar";
 
 function Header() {
   const { state, dispath } = useContext(ProductContext);
+  // Get location for hide & show SearchBar Component
+  const location = useLocation();
+  const { pathname } = location;
 
   // run only if state changes and Not Mount
   const didMount = useRef(false);
@@ -27,9 +30,7 @@ function Header() {
         <Link to={"/"} className="logo">
           فروشگاه مواد غذایی
         </Link>
-        <div className="search_header">
-          <SearchBar />
-        </div>
+        <div className="search_header">{pathname === "/" && <SearchBar />}</div>
         <div className="icon_Sopping_box">
           <Link to={"/basket"} className="shoppe_icon_box">
             <AiOutlineShopping className="shop_icon" />
