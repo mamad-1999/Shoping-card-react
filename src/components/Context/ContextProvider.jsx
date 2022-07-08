@@ -13,7 +13,7 @@ const initialState = {
   totalPriceFainal: 0,
   isFavorite: false,
   isEnterOfferCode: false,
-  offerMessage: "",
+  offerMessage: ""
 };
 
 const sumPrice = (items, isOffer) => {
@@ -29,7 +29,7 @@ const sumPrice = (items, isOffer) => {
       totalPrice,
       offerPrice,
       totalPriceAfterOffer,
-      ...sumPriceWithSend(totalPrice, offerPrice),
+      ...sumPriceWithSend(totalPrice, offerPrice)
     };
   } else {
     return { totalPrice, ...sumPriceWithSend(totalPrice) };
@@ -51,7 +51,7 @@ const sumPriceWithSend = (totalPrice, offerPrice = 0) => {
 
 const reduce = (state, action) => {
   switch (action.type) {
-    case "ADD_FAVORITE":
+    case "ADD_FAVORITE": {
       state.allProducts.forEach((product) => {
         if (product.id === action.payload) {
           product.isInterest = !product.isInterest;
@@ -60,18 +60,20 @@ const reduce = (state, action) => {
         }
       });
       return {
-        ...state,
+        ...state
       };
-    case "REMOVE_ALL_FAVORITE":
+    }
+    case "REMOVE_ALL_FAVORITE": {
       state.favorites = [];
       state.allProducts.forEach((product) => {
         product.isInterest = false;
       });
 
       return {
-        ...state,
+        ...state
       };
-    case "ADD_TO_BASKET":
+    }
+    case "ADD_TO_BASKET": {
       const hasProduct = state.basket.some(
         (product) => product.id === action.payload
       );
@@ -84,9 +86,10 @@ const reduce = (state, action) => {
 
       return {
         ...state,
-        ...sumPrice(state.basket, state.isEnterOfferCode),
+        ...sumPrice(state.basket, state.isEnterOfferCode)
       };
-    case "REMOVE_FROM_BASKET":
+    }
+    case "REMOVE_FROM_BASKET": {
       const indexDelete = state.basket.findIndex(
         (product) => product.id === action.payload
       );
@@ -97,9 +100,10 @@ const reduce = (state, action) => {
 
       return {
         ...state,
-        ...sumPrice(state.basket, state.isEnterOfferCode),
+        ...sumPrice(state.basket, state.isEnterOfferCode)
       };
-    case "INCREASE":
+    }
+    case "INCREASE": {
       const indexPlus = state.basket.findIndex(
         (product) => product.id === action.payload
       );
@@ -107,9 +111,10 @@ const reduce = (state, action) => {
 
       return {
         ...state,
-        ...sumPrice(state.basket, state.isEnterOfferCode),
+        ...sumPrice(state.basket, state.isEnterOfferCode)
       };
-    case "DECREASE":
+    }
+    case "DECREASE": {
       const indexMinus = state.basket.findIndex(
         (product) => product.id === action.payload
       );
@@ -119,21 +124,24 @@ const reduce = (state, action) => {
 
       return {
         ...state,
-        ...sumPrice(state.basket, state.isEnterOfferCode),
+        ...sumPrice(state.basket, state.isEnterOfferCode)
       };
-    case "EMPTY_BASKET":
+    }
+    case "EMPTY_BASKET": {
       state.basket = state.basket.forEach((product) => (product.count = 1));
       state.basket = [];
       return {
         ...state,
-        ...sumPrice(state.basket, state.isEnterOfferCode),
+        ...sumPrice(state.basket, state.isEnterOfferCode)
       };
-    case "REMOVE_CLASS":
+    }
+    case "REMOVE_CLASS": {
       state.isFavorite = false;
       return {
-        ...state,
+        ...state
       };
-    case "OFFER_CODE":
+    }
+    case "OFFER_CODE": {
       if (offerCode.code === action.payload) {
         state.isEnterOfferCode = true;
         state.offerMessage = "تخفیف اعمال شد";
@@ -142,8 +150,9 @@ const reduce = (state, action) => {
       }
       return {
         ...state,
-        ...sumPrice(state.basket, state.isEnterOfferCode),
+        ...sumPrice(state.basket, state.isEnterOfferCode)
       };
+    }
     default:
       return state;
   }
