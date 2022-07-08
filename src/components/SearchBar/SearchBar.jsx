@@ -5,7 +5,7 @@ import { FilterContext } from "../Context/ContextFilter";
 import { useLocation } from "react-router-dom";
 
 export default function SearchBar() {
-  const { dispath } = useContext(FilterContext);
+  const { state, dispath } = useContext(FilterContext);
 
   const location = useLocation();
   const { pathname } = location;
@@ -23,6 +23,7 @@ export default function SearchBar() {
         onChange={(e) => searchKeywordHandler(e)}
         type="text"
         placeholder="جستجو کنید ..."
+        value={state.searchKey}
       />
       <span>
         <FiSearch />
