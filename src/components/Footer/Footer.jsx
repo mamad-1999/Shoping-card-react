@@ -23,6 +23,7 @@ export default function Footer() {
             target={"_blank"}
             href="https://mohammadyousefvand.github.io/Memory-Card-Game/"
             className="btn_link_to_game"
+            rel="noreferrer"
           >
             بزن بریم
           </a>
@@ -30,6 +31,7 @@ export default function Footer() {
             target={"_blank"}
             href="https://github.com/mohammadyousefvand/Memory-Card-Game"
             className="btn_link_to_game"
+            rel="noreferrer"
           >
             سورس کد
           </a>
@@ -40,7 +42,11 @@ export default function Footer() {
         <div className="footer_link_box">
           <Link to={"/basket"}>سبد خرید</Link>
           <Link to={"/favorite"}>علاقه مندی ها</Link>
-          <a target={"_blank"} href="#">
+          <a
+            target={"_blank"}
+            href="https://github.com/mohammadyousefvand/Shoping-card-react"
+            rel="noreferrer"
+          >
             دیدن سورس کد پروژه در گیت هاب
           </a>
         </div>
