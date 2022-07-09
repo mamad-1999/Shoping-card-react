@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { ProductContext } from "../Context/ContextProvider";
+import { ProductDispath } from "../Context/ContextProvider";
 
 export default function FavoriteCard(props) {
-  const { dispath } = useContext(ProductContext);
+  const { dispath } = useContext(ProductDispath);
 
   return (
     <div key={props.id} className="favorite_card">

@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import { GrClose } from "react-icons/gr";
 import Buttons from "../Buttons/Buttons";
-import { ProductContext } from "../Context/ContextProvider";
+import { ProductDispath } from "../Context/ContextProvider";
 import { Link } from "react-router-dom";
 
 export default function BasketItem(props) {
-  const { dispath } = useContext(ProductContext);
+  const { dispath } = useContext(ProductDispath);
 
   return (
     <div key={props.id} className="basket_item">

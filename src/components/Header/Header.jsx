@@ -2,12 +2,13 @@ import React, { useContext, useEffect, useRef } from "react";
 import "./Header.css";
 import { AiOutlineShopping } from "react-icons/ai";
 import { BsFillBookmarkHeartFill } from "react-icons/bs";
-import { ProductContext } from "../Context/ContextProvider";
+import { ProductContext, ProductDispath } from "../Context/ContextProvider";
 import { Link, useLocation } from "react-router-dom";
 import SearchBar from "../SearchBar/SearchBar";
 
 function Header() {
-  const { state, dispath } = useContext(ProductContext);
+  const { state } = useContext(ProductContext);
+  const { dispath } = useContext(ProductDispath);
   // Get location for hide & show SearchBar Component
   const location = useLocation();
   const { pathname } = location;

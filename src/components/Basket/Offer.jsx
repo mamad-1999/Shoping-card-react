@@ -1,10 +1,11 @@
 import React, { useState, useContext } from "react";
-import { ProductContext } from "../Context/ContextProvider";
+import { ProductContext, ProductDispath } from "../Context/ContextProvider";
 
 function Offer() {
   const [offerInput, setOfferInput] = useState("");
   const [clickButton, setClickButton] = useState(false);
-  const { state, dispath } = useContext(ProductContext);
+  const { state } = useContext(ProductContext);
+  const { dispath } = useContext(ProductDispath);
 
   const inputHandler = (e) => {
     setOfferInput(e.target.value);

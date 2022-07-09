@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
-import { ProductContext } from "../Context/ContextProvider";
+import { ProductContext, ProductDispath } from "../Context/ContextProvider";
 import "./FavoritePage.css";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
 import FavoriteCard from "./FavoriteCard";
 
 export default function FavoritePage() {
-  const { state, dispath } = useContext(ProductContext);
+  const { state } = useContext(ProductContext);
+  const { dispath } = useContext(ProductDispath);
 
   return (
     <>

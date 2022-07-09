@@ -2,14 +2,15 @@ import React, { useContext } from "react";
 import "./Basket.css";
 import { Link } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
-import { ProductContext } from "../Context/ContextProvider";
+import { ProductContext, ProductDispath } from "../Context/ContextProvider";
 import BasketItem from "./BasketItem";
 import Offer from "./Offer";
 import OfferBadge from "./OfferBadge";
 import SendProducts from "./SendProducts";
 
 export default function Basket() {
-  const { state, dispath } = useContext(ProductContext);
+  const { state } = useContext(ProductContext);
+  const { dispath } = useContext(ProductDispath);
   return (
     <>
       <div className="favorite_container_linkBar">

@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { ProductContext } from "../Context/ContextProvider";
+import { ProductContext, ProductDispath } from "../Context/ContextProvider";
 import { HiArrowRight } from "react-icons/hi";
 import "./Details.css";
 import Buttons from "../Buttons/Buttons";
 
 export default function Details() {
   const navigate = useNavigate();
-  const { state, dispath } = useContext(ProductContext);
+  const { state } = useContext(ProductContext);
+  const { dispath } = useContext(ProductDispath);
   const params = useParams();
   const datas = state.allProducts.find((product) => product.id == params.id);
   const checkBasket = state.basket.some((product) => product.id == params.id);

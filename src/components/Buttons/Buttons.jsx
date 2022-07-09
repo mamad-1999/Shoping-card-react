@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
-import { ProductContext } from "../Context/ContextProvider";
+import { ProductDispath } from "../Context/ContextProvider";
 import "./Buttons.css";
 
 export default function Buttons(props) {
-  const { state, dispath } = useContext(ProductContext);
+  const { dispath } = useContext(ProductDispath);
 
   return (
     <div className="basket_buttons">
