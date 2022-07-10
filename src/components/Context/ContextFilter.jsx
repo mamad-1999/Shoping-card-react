@@ -48,12 +48,15 @@ const filterReduce = (state, action) => {
 };
 
 export const FilterContext = createContext();
+export const FilterDispath = createContext();
 
 export default function ContextFilter({ children }) {
   const [state, dispath] = useReducer(filterReduce, initialFilterState);
   return (
-    <FilterContext.Provider value={{ state, dispath }}>
-      {children}
+    <FilterContext.Provider value={{ state }}>
+      <FilterDispath.Provider value={{ dispath }}>
+        {children}
+      </FilterDispath.Provider>
     </FilterContext.Provider>
   );
 }

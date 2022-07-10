@@ -1,11 +1,12 @@
 import React, { useContext, useEffect } from "react";
 import "./SearchBar.css";
 import { FiSearch } from "react-icons/fi";
-import { FilterContext } from "../Context/ContextFilter";
+import { FilterContext, FilterDispath } from "../Context/ContextFilter";
 import { useLocation } from "react-router-dom";
 
 export default function SearchBar() {
-  const { state, dispath } = useContext(FilterContext);
+  const { state } = useContext(FilterContext);
+  const { dispath } = useContext(FilterDispath);
 
   const location = useLocation();
   const { pathname } = location;
