@@ -18,6 +18,10 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
+.searchBar_box input:focus{
+  border: 2px solid #ffaa00;
+}
+
 .searchBar_box input::placeholder {
   color: rgba(0, 0, 0, 0.4);
 }

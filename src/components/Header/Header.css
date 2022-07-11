@@ -31,14 +31,24 @@
   position: relative;
 }
 
+.shoppe_icon_box:hover .shop_icon {
+  transform: translateY(-3px);
+}
+
+.mark_icon_box:hover .mark_icon {
+  transform: translateY(-3px);
+}
+
 .shop_icon {
   color: #fff;
   font-size: 40px;
+  transition: all 0.3s;
 }
 
 .mark_icon {
   color: #fff;
   font-size: 30px;
+  transition: all 0.3s;
 }
 
 .badge_shope,
