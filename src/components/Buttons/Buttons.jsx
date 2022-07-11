@@ -9,9 +9,6 @@ export default function Buttons(props) {
   const { state } = useContext(ProductContext);
   const { id } = props;
   const countItem = state.basket.find((product) => product.id === id);
-
-  console.log(countItem);
-
   return (
     <div className="basket_buttons">
       <span

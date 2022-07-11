@@ -138,6 +138,7 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 20px;
+  border-right: 5px solid #8fc700;
 }
 
 .favorite_linkBar span {
