@@ -28,7 +28,7 @@
 - Show Number of products In Badge
 - calculation Total Price
 - Shipping cost calculation
-- Offer Code => ABCD
+- Offer Code
 - calculation Price After confirmation offer code
 - Finally, the game "Memory Game" link and Source in the footer
 
