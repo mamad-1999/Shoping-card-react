@@ -1,21 +1,16 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import Interest from "./Interest";
 import { Link } from "react-router-dom";
-import { ProductDispath } from "../../Context/ContextProvider";
+import { ProductContext, ProductDispath } from "../../Context/ContextProvider";
+import Buttons from "../../Buttons/Buttons";
 
 export default function Card(props) {
   const { dispath } = useContext(ProductDispath);
-  const [isAddToBasket, setIsAddToBasket] = useState(false);
+  const { state } = useContext(ProductContext);
 
-  const handelClick = () => {
-    dispath({ type: "ADD_TO_BASKET", payload: props.id });
-    setIsAddToBasket(true);
-
-    setTimeout(() => {
-      setIsAddToBasket(false);
-    }, 3000);
-  };
+  const datas = state.allProducts.find((product) => product.id === props.id);
+  const checkBasket = state.basket.some((product) => product.id === props.id);
 
   return (
     <div key={props.id} className="box">
@@ -30,15 +25,17 @@ export default function Card(props) {
           </div>
         </div>
       </Link>
-      <button
-        onClick={handelClick}
-        className={`products_button ${
-          isAddToBasket ? "add_button" : "buy_button"
-        }`}
-      >
-        {isAddToBasket ? "افزوده شد" : "خرید"}
-        <FiShoppingCart className="buy_icon" />
-      </button>
+      {checkBasket ? (
+        <Buttons {...datas} />
+      ) : (
+        <button
+          onClick={() => dispath({ type: "ADD_TO_BASKET", payload: props.id })}
+          className="products_button buy_button"
+        >
+          خرید
+          <FiShoppingCart className="buy_icon" />
+        </button>
+      )}
       <Interest interest={props.isInterest} id={props.id} />
     </div>
   );
