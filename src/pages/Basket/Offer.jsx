@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { ProductContext, ProductDispath } from "../Context/ContextProvider";
+import { ProductContext, ProductDispath } from "../../components/Context/ContextProvider";
 
 function Offer() {
   const [offerInput, setOfferInput] = useState("");

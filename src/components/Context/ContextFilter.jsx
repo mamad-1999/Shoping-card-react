@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from "react";
-import allProducts from "../../Data";
+import allProducts from "../../data/Data";
 
 const initialFilterState = {
   filteredItems: [...allProducts],

@@ -1,11 +1,11 @@
 import { Navigate, useRoutes } from 'react-router-dom';
-import Basket from './components/Basket/Basket';
+import Basket from './pages/Basket/Basket';
 import ContextFilter from './components/Context/ContextFilter';
 import ContextProvider from './components/Context/ContextProvider';
-import Details from './components/Details/Details';
+import Details from './pages/Details/Details';
 import FavoritePage from './components/Favorite/FavoritePage';
-import Header from './components/Header/Header';
-import Products from './components/Products/Products';
+import Header from './layout/Header/Header';
+import Products from './pages/Products/Products';
 
 
 function App() {

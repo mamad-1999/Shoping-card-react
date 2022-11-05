@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { sendPrice } from "../../Offer";
-import { ProductContext } from "../Context/ContextProvider";
+import { sendPrice } from "../../data/Offer";
+import { ProductContext } from "../../components/Context/ContextProvider";
 
 export default function SendProducts() {
   const { state } = useContext(ProductContext);

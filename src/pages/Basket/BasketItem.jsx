@@ -1,4 +1,4 @@
-import Buttons from "../Buttons/Buttons";
+import Buttons from "../../components/Buttons/Buttons";
 import { Link } from "react-router-dom";
 
 export default function BasketItem(props) {

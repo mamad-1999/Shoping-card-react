@@ -2,9 +2,12 @@ import React, { useContext, useEffect, useRef } from "react";
 import "./Header.css";
 import { AiOutlineShopping } from "react-icons/ai";
 import { BsFillBookmarkHeartFill } from "react-icons/bs";
-import { ProductContext, ProductDispath } from "../Context/ContextProvider";
+import {
+  ProductContext,
+  ProductDispath
+} from "../../components/Context/ContextProvider";
 import { Link, useLocation } from "react-router-dom";
-import SearchBar from "../SearchBar/SearchBar";
+import SearchBar from "../../components/SearchBar/SearchBar";
 
 function Header() {
   const { state } = useContext(ProductContext);

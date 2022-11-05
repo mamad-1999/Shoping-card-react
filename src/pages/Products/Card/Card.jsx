@@ -2,8 +2,11 @@ import React, { useContext } from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import Interest from "./Interest";
 import { Link } from "react-router-dom";
-import { ProductContext, ProductDispath } from "../../Context/ContextProvider";
-import Buttons from "../../Buttons/Buttons";
+import {
+  ProductContext,
+  ProductDispath
+} from "../../../components/Context/ContextProvider";
+import Buttons from "../../../components/Buttons/Buttons";
 
 export default function Card(props) {
   const { dispath } = useContext(ProductDispath);

@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./Products.css";
 import Filter from "./Filter/Filter";
-import { FilterContext } from "../Context/ContextFilter";
+import { FilterContext } from "../../components/Context/ContextFilter";
 import Card from "./Card/Card";
-import SearchBar from "../SearchBar/SearchBar";
-import Footer from "../Footer/Footer";
+import SearchBar from "../../components/SearchBar/SearchBar";
+import Footer from "../../layout/Footer/Footer";
 
 export default function Products() {
   const { state } = useContext(FilterContext);
