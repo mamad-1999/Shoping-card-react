@@ -1,12 +1,9 @@
 import React, { useContext } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import {
-  ProductContext,
-  ProductDispath
-} from "../../components/Context/ContextProvider";
+import { ProductContext, ProductDispath } from "../Context/ContextProvider";
 import { HiArrowRight } from "react-icons/hi";
 import "./Details.css";
-import Buttons from "../../components/Buttons/Buttons";
+import Buttons from "../Buttons/Buttons";
 
 export default function Details() {
   const navigate = useNavigate();

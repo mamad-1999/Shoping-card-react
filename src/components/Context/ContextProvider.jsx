@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from "react";
-import allProducts from "../../data/Data";
-import offerCode from "../../data/Offer";
-import { sendPrice } from "../../data/Offer";
+import allProducts from "../../Data";
+import offerCode from "../../Offer";
+import { sendPrice } from "../../Offer";
 
 const initialState = {
   allProducts,

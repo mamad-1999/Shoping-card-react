@@ -1,5 +1,5 @@
 import React from "react";
-import offerCode from "../../data/Offer";
+import offerCode from "../../Offer";
 
 function OfferBadge() {
   return (

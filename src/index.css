@@ -1,9 +1,12 @@
 @font-face {
   font-family: Yekan;
-  src: url(./../../public//font//iranyekanwebregular.e31c09af.woff2);
+  src: url(./../public/font/iranyekanwebregular.e31c09af.woff2);
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Yekan', sans-serif;
   user-select: none;
   text-decoration: none;

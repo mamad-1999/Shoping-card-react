@@ -1,9 +1,6 @@
 import React, { useContext } from "react";
 import { BsHeart, BsHeartFill } from "react-icons/bs";
-import {
-  ProductContext,
-  ProductDispath
-} from "../../../components/Context/ContextProvider";
+import { ProductContext, ProductDispath } from "../../Context/ContextProvider";
 
 export default function Interest(props) {
   const { state } = useContext(ProductContext);

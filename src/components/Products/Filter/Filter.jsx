@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { FilterDispath } from "../../../components/Context/ContextFilter";
+import { FilterDispath } from "../../Context/ContextFilter";
 import "./Filter.css";
 
 export default function Filter() {
